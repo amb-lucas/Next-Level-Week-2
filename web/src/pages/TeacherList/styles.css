@@ -1,0 +1,50 @@
+#search-teachers .input-block {
+  margin-top: 1.4rem;
+}
+
+#page-teacher-list main {
+  margin: 3.2rem auto;
+  width: 90%;
+}
+
+#page-teacher-list {
+  width: 100vw;
+  height: 100vh;
+}
+
+#search-teachers {
+  margin-top: 3.2rem;
+}
+
+#search-teachers label {
+  color: var(--color-text-in-primary);
+}
+
+#page-teacher-list .empty-results {
+  margin-top: 3.6rem;
+}
+
+@media (min-width: 700px) {
+  #page-teacher-list main {
+    padding: 3.2rem 0;
+    max-width: 740px;
+    margin: 0 auto;
+  }
+
+  #page-teacher-list {
+    max-width: 100%;
+  }
+
+  #search-teachers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    position: absolute;
+    bottom: -26px;
+  }
+
+  #search-teachers .input-block,
+  #search-teachers .select-block + .select-block {
+    margin-top: 0;
+  }
+}
